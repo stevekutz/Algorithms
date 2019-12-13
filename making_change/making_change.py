@@ -16,6 +16,7 @@ def making_change(amount, denominations):
 
     return making_change(amount-denominations[-1], denominations) + making_change(amount, denominations[:-1])            
 
+making_change(10, denominations = [1, 5, 10, 25, 50])
 
 if __name__ == "__main__":
   # Test our your implementation from the command line
